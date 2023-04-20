@@ -9,43 +9,45 @@
 </head>
 <body>
     <main>
-        <h1>Google</h1>
-        <h1>Criar sua Conta Google</h1>
-        <fieldset>
-            <form action="pag_2.html" method="post">
-                <div>
-                    <label for="i_nome">Nome</label>
-                    <input type="text" name="nome" id="i_nome">
-                </div>
-                <div>
-                    <label for="i_apelido">Apelido</label>
-                    <input type="text" name="apelido" id="i_apelido">
-                </div>
-                <div>
-                    <label for="i_usuario">Nome de utilizador</label>
-                    <input type="text" name="usuario" id="i_usuario">
-                    <p>Pode utilisar letras, números e pontos</p>
-                </div>
-                <p>
-                    Usar o meu endereço de email actual em alternativa
-                </p>
-                <div>
-                    <label for="i_senha">Palavra-Passe</label>
-                    <input type="password" name="senha" id="i_senha">
-                </div>
-                <div>
-                    <label for="i_confirm_senha">Confirmar</label>
-                    <input type="password" name="confirm_senha" id="i_confirm_senha">
-                    <p>Utilize 8 ou mais carateres numa mistura de letras, números e símbolos.</p>
-                </div>
-                <div>
-                    <input type="checkbox" name="mostrar" id="i_mostrar">
-                    <label for="i_mostrar">Mostrar palavra-pass</label>
-                </div>
-                <p><a href="#">Iniciar sessão em alternativa</a></p>
-                <input type="button" value="Seguinte">
-            </form>
-        </fieldset>
+        <div id="google_logo">
+            <!--Logo do google-->
+        </div>
+        <p>Criar a sua Conta Google</p>
+        
+        <form action="pag_2.html" method="post" autocomplete="off">
+            <div>
+                <label for="i_nome">Nome</label>
+                <input type="text" name="nome" id="i_nome" placeholder="  Nome Próprio">
+            </div>
+            <div>
+                <label for="i_apelido">Apelido</label>
+                <input type="text" name="apelido" id="i_apelido" placeholder=" Apelido">
+            </div>
+            <div>
+                <label for="i_usuario">Nome de utilizador</label>
+                <input type="text" name="usuario" id="i_usuario" placeholder=" Nome de utilizador">
+                <p>Pode utilisar letras, números e pontos</p>
+            </div>
+            <p>
+                Usar o meu endereço de email actual em alternativa
+            </p>
+            <div>
+                <label for="i_senha">Palavra-Passe</label>
+                <input type="password" name="senha" id="i_senha" placeholder=" Palavra-passe">
+            </div>
+            <div>
+                <label for="i_confirm_senha">Confirmar</label>
+                <input type="password" name="confirm_senha" id="i_confirm_senha" placeholder=" Confirmar">
+                <p>Utilize 8 ou mais carateres numa mistura de letras, números e símbolos.</p>
+            </div>
+            <div>
+                <input type="checkbox" name="mostrar" id="i_mostrar" class="checkbox">
+                <label id="checkbox" for="i_mostrar"> Mostrar palavra-pass </label>
+            </div>
+            <p><a href="#">Iniciar sessão em alternativa</a></p>
+            <input type="button" value="Seguinte">
+        </form>
+       
     </main>
 </body>
 </html>
