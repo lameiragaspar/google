@@ -9,45 +9,51 @@
 </head>
 <body>
     <main>
-        <div id="google_logo">
-            <!--Logo do google-->
-        </div>
-        <p>Criar a sua Conta Google</p>
-        
-        <form action="pag_2.html" method="post" autocomplete="off">
-            <div>
-                <label for="i_nome">Nome</label>
-                <input type="text" name="nome" id="i_nome" placeholder="  Nome Próprio">
+        <section>
+            <div id="google_logo">
+                <!--Logo do google-->
             </div>
-            <div>
-                <label for="i_apelido">Apelido</label>
-                <input type="text" name="apelido" id="i_apelido" placeholder=" Apelido">
-            </div>
-            <div>
-                <label for="i_usuario">Nome de utilizador</label>
-                <input type="text" name="usuario" id="i_usuario" placeholder=" Nome de utilizador">
-                <p>Pode utilisar letras, números e pontos</p>
-            </div>
-            <p>
-                Usar o meu endereço de email actual em alternativa
-            </p>
-            <div>
-                <label for="i_senha">Palavra-Passe</label>
-                <input type="password" name="senha" id="i_senha" placeholder=" Palavra-passe">
-            </div>
-            <div>
-                <label for="i_confirm_senha">Confirmar</label>
-                <input type="password" name="confirm_senha" id="i_confirm_senha" placeholder=" Confirmar">
-                <p>Utilize 8 ou mais carateres numa mistura de letras, números e símbolos.</p>
-            </div>
-            <div>
-                <input type="checkbox" name="mostrar" id="i_mostrar" class="checkbox">
-                <label id="checkbox" for="i_mostrar"> Mostrar palavra-pass </label>
-            </div>
-            <p><a href="#">Iniciar sessão em alternativa</a></p>
-            <input type="button" value="Seguinte">
-        </form>
-       
+            <p>Criar a sua Conta Google</p>
+            
+            <form action="pag_2.html" method="post" autocomplete="off">
+                <div>
+                    <label class="label" for="i_nome">Nome</label>
+                    <input class="texto"  type="text" name="nome" id="i_nome" placeholder="  Nome Próprio">
+                </div>
+                <div>
+                    <label class="label" for="i_apelido">Apelido</label>
+                    <input class="texto" type="text" name="apelido" id="i_apelido" placeholder=" Apelido">
+                </div>
+                <div>
+                    <label class="label" for="i_usuario">Nome de utilizador</label>
+                    <input class="texto" class="ultimo" type="text" name="usuario" id="i_usuario" placeholder=" Nome de utilizador">
+                    <p class="nota">Pode utilisar letras, números e pontos</p>
+                </div>
+                <p id="email">
+                    Usar o meu endereço de email actual em alternativa
+                </p>
+                <div>
+                    <label class="label" for="i_senha">Palavra-Passe</label>
+                    <input class="texto" type="password" name="senha" id="i_senha" placeholder=" Palavra-passe">
+                </div>
+                <div>
+                    <label class="label" for="i_confirm_senha">Confirmar</label>
+                    <input class="texto" class="ultimo" type="password" name="confirm_senha" id="i_confirm_senha" placeholder=" Confirmar">
+                    <p class="nota">Utilize 8 ou mais carateres numa mistura de letras, números e símbolos.</p>
+                </div>
+                <!--FIM DO FORMULÁRIO-->
+                <div>
+                    <input class="check" type="checkbox" name="mostrar" id="i_mostrar">
+                    <label id="check" for="i_mostrar"> Mostrar palavra-passe</label>
+                </div>
+                <p>
+                    <a href="#">Iniciar sessão em alternativa</a>
+                </p>
+                <div>
+                    <input type="button" value="Seguinte">
+                </div>
+            </form>
+        </section>
     </main>
 </body>
 </html>

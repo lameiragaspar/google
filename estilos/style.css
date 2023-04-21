@@ -6,54 +6,76 @@
     margin: 0;
     padding: 0;
     border-radius: border-box;
-}
-
-html{
-    width: 100vw;
-    height: 100vh;
     font-family: 'Poppins', sans-serif;
 }
 
+html, body{
+    height:100vh;
+    width: 100vw;
+}
+
 main{
-    padding: 22px 40px;
+    padding: 45px;
 }
 
-main > div#google_logo{
-    background:url(../imagens/logo.png)center center no-repeat;
+section{
+    margin: auto;
+    width: 80vw;
+}
+
+section > div#google_logo{
+    background: url(../imagens/logo.png) center center no-repeat;
     background-size: cover;
-    width:77px;
-    height: 77px;
+    margin-left: -15px;
+    width: 100px;
+    height: 30px;
 }
 
-main > p{
-    margin: -11px 0px 30px;
-    font-size: 1.3em;
-    color:#000;
+section > p{
+    font-size: 1.5em;
+    margin: 10px 0px 20px;
 }
 
-label{
+form label.label{
     display: none;
 }
 
-main > form input{
-    width: 80vw;
-    height: 33px;
-    margin-bottom: 20px;
-    border: 1px solid #9e9e9e49;
+form input.texto{
+    width: 79vw;
+    height: 35px;
+    margin-bottom: 25px;
+    border: 1px solid #b4b4b462;
     border-radius: 3px;
 }
 
-div > p{
+form input.texto:focus-within{
+    border-color: #58a2ec;
+    border: none;
+}
+
+form p.nota{
     font-size: .7em;
     text-indent: 10px;
+    margin-top: -25px;
+    margin-bottom: 10px;
 }
 
-input.checkbox{
+form p#email{
+    font-size: .8em;
+    color:#58a2ec;
+    font-weight:600;
+    margin-left: -10px;
+    margin-bottom:  25px;
+    padding: 10px;
+
     display: inline-block;
-    width: 3vw;
 }
 
-label#checkbox{
-    display: inline-block;
-
+form p#email:hover{
+    background-color:#58a2ec0c;
+    color: #4084c9;
+    border-radius: 5px;
+    cursor: pointer;
+    
+    
 }
